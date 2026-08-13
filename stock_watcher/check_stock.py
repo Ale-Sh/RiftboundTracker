@@ -31,7 +31,10 @@ DEFAULT_OUT_OF_STOCK = [
 ]
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; RiftboundStockWatcher/1.0; personal use)"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "de-AT,de;q=0.9,en;q=0.8",
 }
 
 REQUEST_TIMEOUT = 20
