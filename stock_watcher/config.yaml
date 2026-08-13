@@ -1,0 +1,52 @@
+# Riftbound Restock-Watcher – Shop-Konfiguration
+#
+# in_stock_keywords / out_of_stock_keywords: optional, ueberschreiben die
+# Standard-Keywords (siehe check_stock.py) fuer diesen Shop.
+#
+# unreliable: true = Seite nutzt Bot-Schutz oder laedt Inhalte per JavaScript nach.
+# Der einfache HTML-Keyword-Check funktioniert dort oft nicht zuverlaessig.
+# Diese Shops besser weiter manuell im Ledger-Tool pruefen.
+
+shops:
+  - id: riot
+    name: "Riot Games Store"
+    category: "Offizielle Quelle"
+    url: "https://merch.riotgames.com/de-de"
+    unreliable: true
+
+  - id: amzicards
+    name: "Amzicards.de"
+    category: "Fachshops (DE)"
+    url: "https://amzicards.de"
+
+  - id: tcgtrade
+    name: "TCG-Trade.de"
+    category: "Fachshops (DE)"
+    url: "https://tcg-trade.de"
+
+  - id: tabletopdragon
+    name: "Tabletop-dragon.de"
+    category: "Fachshops (DE)"
+    url: "https://tabletop-dragon.de"
+
+  - id: spielraum
+    name: "SpielRaum (Wien)"
+    category: "Oesterreich"
+    url: "https://spielraum.co.at"
+
+  - id: tcgdealers
+    name: "TCG Dealers"
+    category: "Oesterreich"
+    url: "https://tcg-dealers.at"
+
+  - id: cardmarket
+    name: "Cardmarket"
+    category: "Marktplatz"
+    url: "https://www.cardmarket.com/de/Riftbound"
+    unreliable: true
+
+  - id: amazon
+    name: "Amazon.de"
+    category: "Amazon"
+    url: "https://www.amazon.de"
+    unreliable: true
