@@ -1,0 +1,5 @@
+# Automatisch verwaltet von check_stock.py - hier landen Begriffe, die du dem
+# Bot per Telegram-Antwort beigebracht hast (z. B. "tin" oder "elite trainer box").
+# Manuelles Bearbeiten ist ok, wird aber beim naechsten Lauf ueberschrieben,
+# falls sich etwas Neues aendert.
+[]

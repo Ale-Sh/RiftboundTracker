@@ -117,6 +117,135 @@ Eigene Keywords pro Shop (falls Standardwoerter nicht passen):
   Tier: 2000 Min/Monat). Ein Lauf alle 20 Minuten braucht ca. 1–2 Minuten
   Laufzeit → passt locker ins Freikontingent.
 
+## 6. Mehr Haendler abdecken ueber Geizhals (Preisvergleich)
+
+Statt jeden einzelnen Shop von Hand einzutragen, gibt es einen Umweg, der
+automatisch viele Haendler auf einmal abdeckt: **Geizhals.de** ist ein
+Preisvergleichsdienst, der auf einer einzigen Produktseite alle Angebote
+verschiedener Haendler zusammenfasst. Ist ein Produkt nirgends verfuegbar,
+steht dort woertlich "Es gibt derzeit keine Anbieter fuer dieses Produkt".
+Sobald irgendein erfasster Haendler es listet, verschwindet dieser Satz.
+
+In `config.yaml` sind aktuell zwei Geizhals-Produktseiten eingetragen
+(Origins Booster Display, Spiritforged Booster Display). Fuer neuere Sets
+(z. B. Unleashed, Vendetta) habe ich keine zuverlaessige Geizhals-Seite
+gefunden - Riftbound bringt haeufig neue Sets raus, und Geizhals listet sie
+nicht immer sofort. So findest und ergaenzt du sie selbst:
+
+1. Auf geizhals.de nach "riftbound [setname] booster display" suchen
+   (z. B. "riftbound vendetta booster display")
+2. Die Produktseite oeffnen, URL kopieren
+3. In `config.yaml` einen neuen Block nach dem Muster der bestehenden
+   Geizhals-Eintraege ergaenzen:
+
+```yaml
+  - id: geizhals_vendetta_display
+    name: "Geizhals - Vendetta Booster Display"
+    category: "Preisvergleich (Geizhals, viele Haendler)"
+    url: "https://geizhals.de/DIE-KOPIERTE-URL-HIER.html"
+    in_stock_keywords: []
+    out_of_stock_keywords: ["es gibt derzeit keine anbieter"]
+    product_type: booster
+```
+
+**Wichtig:** Geizhals blockt bei zu haeufigen automatischen Zugriffen
+kurzzeitig mit einer Fehlermeldung (HTTP 429 "zu viele Anfragen"). Bei einem
+Check alle 20 Minuten sollte das kaum vorkommen; falls doch, im Actions-Log
+nachsehen, ob `geizhals_...` als `error` markiert wird, und im Zweifel das
+Intervall in `watch.yml` auf 30 Minuten erhoehen.
+
+**Alternative ganz ohne eigenes Skript:** Geizhals hat einen eingebauten
+**Preisalarm** (Button "Preisalarm setzen" auf jeder Produktseite). Trägst du
+dort deine Preisobergrenze ein, bekommst du automatisch eine E-Mail, sobald
+irgendein Haendler das Produkt zu diesem Preis oder guenstiger listet — das
+deckt implizit auch "wieder verfuegbar" ab, weil aktuell ja niemand listet.
+Nachteil: E-Mail statt Telegram, dafuer in 2 Minuten eingerichtet und ohne
+GitHub. Praktisch als Rueckversicherung parallel zum eigenen Watcher.
+
+## 7. Vorbestellungen beim offiziellen Riot Store
+
+Der Riot Games Store selbst laedt seine Produktseiten per JavaScript nach –
+ein einfacher automatischer Seitenabruf sieht dort praktisch nichts
+Brauchbares (deshalb `unreliable: true`). Riot kuendigt neue Vorbestellungen
+aber vorher schriftlich in einem News-Blog an, und diese Seite ist normal
+auslesbar:
+
+https://playriftbound.com/en-us/news/announcements/
+
+`check_stock.py` prueft diese Seite bei jedem Lauf zusaetzlich zu den Shops.
+Taucht dort ein neuer Artikel auf, kommt eine eigene Telegram-Nachricht mit
+Titel und Link. Artikel, deren Titel "preorder", "pre-order",
+"vorbestellung" oder "vorbestellen" enthaelt, werden dabei extra als
+VORBESTELLUNG markiert, damit du sie sofort erkennst. Nichts an
+`config.yaml` muss dafuer angepasst werden, das laeuft automatisch mit.
+
+**Wichtig zu wissen:** Riot hat das Vorbestell-Verfahren umgestellt. Es ist
+kein "wer zuerst im Shop ist, bekommt es"-Rennen mehr, sondern ein
+**Losverfahren**: Man traegt sich in einem 48-Stunden-Fenster ein, wird
+zufaellig gezogen (oder nicht), und bekommt bei Erfolg einen Kauflink per
+E-Mail. Die Telegram-Nachricht von unserem Watcher sagt dir also: "jetzt ist
+das Anmeldefenster fuer eine Vorbestellung offen" – nicht "jetzt sofort
+kaufen". Zeitdruck besteht trotzdem, weil das Anmeldefenster nur 48 Stunden
+offen ist.
+
+## 8. Nur Displays/Tins/Boosterware statt allem
+
+Standardmaessig zaehlen als "interessant" alle Produkte mit **zufaelligem**
+Boosterinhalt: Displays, Booster-Boxen, Tins, Elite Trainer Boxen (falls
+Riftbound sowas anbietet), Bundles. Einzelne Champion-Decks, Sleeves,
+Playmats & Co. haben festen Inhalt und sollen NICHT benachrichtigen.
+
+**Bei Shops/Geizhals-Seiten** (`config.yaml`): Jeder Eintrag kann
+`product_type: fixed` bekommen. Der Shop wird weiter geprueft (taucht also
+im Ledger-Sync korrekt auf), loest aber keine Telegram-Nachricht mehr aus.
+Ohne dieses Feld (oder mit `product_type: booster`) wird ganz normal
+benachrichtigt. Aktuell ist nur `geizhals_leesin_deck` als `fixed` markiert,
+weitere Champion-Deck-Seiten sollten beim Eintragen genauso markiert werden.
+
+**Bei den Riot-News-Artikeln**: Der Titel wird zusaetzlich nach Woertern wie
+"display", "tin", "elite trainer box", "booster box" durchsucht
+(`BOOSTER_PRODUCT_WORDS` oben in `check_stock.py`). Ein Vorbestell-Artikel
+wird dann so gekennzeichnet:
+
+- **VORBESTELLUNG (Display/Booster-Produkt)** – Titel enthaelt sowohl ein
+  Vorbestell- als auch ein Booster-Wort, hoechste Prioritaet
+- **VORBESTELLUNG (Produkttyp unklar, bitte pruefen)** – Titel deutet auf
+  eine Vorbestellung hin, aber nicht klar erkennbar ob Display oder Deck
+  (z. B. wenn der Artikeltitel selbst keine Produktnamen enthaelt) – hier
+  lohnt sich ein Blick auf den verlinkten Artikel
+- **Neuer Riftbound-News-Artikel** – alles andere, weiterhin gemeldet, aber
+  ohne Vorbestell-Bezug
+
+Da Riftbound noch neue Produktkategorien einfuehren kann, die diese
+Wortliste nicht abdeckt, lieber ab und zu einen Blick auf "Produkttyp
+unklar"-Nachrichten werfen und bei Bedarf `BOOSTER_PRODUCT_WORDS` ergaenzen.
+
+## 9. Der Bot lernt aus deinen Antworten
+
+Wenn ein News-Artikel eine Vorbestellung ankuendigt, aber unklar ist, ob es
+ein Boosterprodukt ist, schickt der Bot dir eine eigene Nachricht mit einer
+Rueckfrage. So antwortest du:
+
+1. In Telegram auf genau diese Nachricht mit der **Antworten**-Funktion
+   reagieren (nicht einfach eine neue Nachricht schreiben — der Bot erkennt
+   nur "Antworten auf diese Nachricht" als gueltige Reaktion)
+2. Entweder einen Begriff aus dem Titel eintippen, der Boosterprodukte
+   kennzeichnet (z. B. "tin" oder "elite trainer box")
+3. Oder "nein" schreiben, falls es kein Boosterprodukt ist (z. B. ein
+   einzelnes Deck)
+
+Beim naechsten automatischen Lauf (max. 20 Minuten spaeter) liest das
+Programm deine Antwort, speichert den Begriff in
+`stock_watcher/learned_booster_words.yaml` (wird automatisch ins Repo
+committet) und bestaetigt dir das per Telegram. Ab dann werden Artikel mit
+diesem Begriff automatisch richtig eingeordnet, ohne erneut zu fragen.
+
+**Achtung, kleine Falle:** Antwortest du nicht ueber die
+Telegram-Antworten-Funktion, sondern schickst einfach eine normale neue
+Nachricht, kann der Bot sie keiner Frage zuordnen und ignoriert sie
+stillschweigend. Falls eine Antwort nicht ankommt, zuerst pruefen, ob wirklich
+auf die Bot-Nachricht geantwortet wurde.
+
 ## Naechste Schritte / Ausbau
 
 - Preisobergrenze direkt im Skript pruefen, sobald ein Shop den Preis im

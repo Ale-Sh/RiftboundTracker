@@ -31,4 +31,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update stock state"
-          file_pattern: stock_watcher/state.json
+          file_pattern: "stock_watcher/state.json stock_watcher/learned_booster_words.yaml"

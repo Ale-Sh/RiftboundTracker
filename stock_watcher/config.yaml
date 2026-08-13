@@ -33,6 +33,7 @@ shops:
     name: "SpielRaum (Wien)"
     category: "Oesterreich"
     url: "https://spielraum.co.at"
+    unreliable: true
 
   - id: tcgdealers
     name: "TCG Dealers"
@@ -50,3 +51,36 @@ shops:
     category: "Amazon"
     url: "https://www.amazon.de"
     unreliable: true
+
+  # Geizhals ist ein Preisvergleichsdienst: eine einzige Produktseite fasst
+  # automatisch die Angebote VIELER Haendler zusammen. "in_stock_keywords: []"
+  # bedeutet: kein Lager-Wort noetig, es reicht, dass der Ausverkauft-Satz fehlt.
+  #
+  # product_type: fixed  -> wird weiter geprueft (fuer Ledger-Sync), loest aber
+  #                         KEINE Telegram-Nachricht mehr aus (z. B. einzelne
+  #                         Champion-Decks, Sleeves, Playmats - fester Inhalt).
+  # Kein product_type oder "booster" -> normale Benachrichtigung (Displays,
+  #                         Tins, Elite Trainer Boxen - zufaelliger Inhalt).
+  - id: geizhals_booster_display
+    name: "Geizhals - Origins Booster Display (viele Haendler)"
+    category: "Preisvergleich (Geizhals, viele Haendler)"
+    url: "https://geizhals.de/league-of-legends-riftbound-origins-booster-display-en-a3517300.html"
+    in_stock_keywords: []
+    out_of_stock_keywords: ["es gibt derzeit keine anbieter"]
+    product_type: booster
+
+  - id: geizhals_spiritforged_display
+    name: "Geizhals - Spiritforged Booster Display (viele Haendler)"
+    category: "Preisvergleich (Geizhals, viele Haendler)"
+    url: "https://geizhals.at/league-of-legends-riftbound-spiritforged-booster-display-en-a3726783.html"
+    in_stock_keywords: []
+    out_of_stock_keywords: ["es gibt derzeit keine anbieter"]
+    product_type: booster
+
+  - id: geizhals_leesin_deck
+    name: "Geizhals - Lee Sin Champion Deck Display"
+    category: "Preisvergleich (Geizhals, viele Haendler)"
+    url: "https://geizhals.eu/league-of-legends-riftbound-origins-lee-sin-champion-deck-display-en-a3517325.html"
+    in_stock_keywords: []
+    out_of_stock_keywords: ["es gibt derzeit keine anbieter"]
+    product_type: fixed
