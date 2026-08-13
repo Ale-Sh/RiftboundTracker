@@ -1,1 +1,42 @@
-{}
+{
+  "riot": {
+    "status": "unk",
+    "last_checked": "2026-08-13T09:46:24.846448+00:00",
+    "name": "Riot Games Store"
+  },
+  "amzicards": {
+    "status": "unk",
+    "last_checked": "2026-08-13T09:46:28.180655+00:00",
+    "name": "Amzicards.de"
+  },
+  "tcgtrade": {
+    "status": "unk",
+    "last_checked": "2026-08-13T09:46:32.705389+00:00",
+    "name": "TCG-Trade.de"
+  },
+  "tabletopdragon": {
+    "status": "unk",
+    "last_checked": "2026-08-13T09:46:36.542214+00:00",
+    "name": "Tabletop-dragon.de"
+  },
+  "spielraum": {
+    "status": "error",
+    "last_checked": "2026-08-13T09:46:39.739453+00:00",
+    "name": "SpielRaum (Wien)"
+  },
+  "tcgdealers": {
+    "status": "unk",
+    "last_checked": "2026-08-13T09:46:43.606629+00:00",
+    "name": "TCG Dealers"
+  },
+  "cardmarket": {
+    "status": "error",
+    "last_checked": "2026-08-13T09:46:46.720163+00:00",
+    "name": "Cardmarket"
+  },
+  "amazon": {
+    "status": "unk",
+    "last_checked": "2026-08-13T09:46:49.967085+00:00",
+    "name": "Amazon.de"
+  }
+}
