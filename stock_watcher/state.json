@@ -2,58 +2,58 @@
   "pending_questions": {},
   "last_update_id": 599022883,
   "riot": {
-    "status": "unk",
-    "last_checked": "2026-08-18T19:09:47.646185+00:00",
+    "status": "error",
+    "last_checked": "2026-08-18T19:57:30.872951+00:00",
     "name": "Riot Games Store"
   },
   "amzicards": {
     "status": "unk",
-    "last_checked": "2026-08-18T19:09:51.057234+00:00",
+    "last_checked": "2026-08-18T19:57:35.899896+00:00",
     "name": "Amzicards.de"
   },
   "tcgtrade": {
     "status": "unk",
-    "last_checked": "2026-08-18T19:09:56.151443+00:00",
+    "last_checked": "2026-08-18T19:57:39.960862+00:00",
     "name": "TCG-Trade.de"
   },
   "tabletopdragon": {
     "status": "unk",
-    "last_checked": "2026-08-18T19:10:06.384803+00:00",
+    "last_checked": "2026-08-18T19:57:49.568574+00:00",
     "name": "Tabletop-dragon.de"
   },
   "spielraum": {
     "status": "error",
-    "last_checked": "2026-08-18T19:10:09.563223+00:00",
+    "last_checked": "2026-08-18T19:57:52.721289+00:00",
     "name": "SpielRaum (Wien)"
   },
   "tcgdealers": {
     "status": "unk",
-    "last_checked": "2026-08-18T19:10:15.330559+00:00",
+    "last_checked": "2026-08-18T19:57:58.207428+00:00",
     "name": "TCG Dealers"
   },
   "cardmarket": {
     "status": "error",
-    "last_checked": "2026-08-18T19:10:18.434405+00:00",
+    "last_checked": "2026-08-18T19:58:01.295235+00:00",
     "name": "Cardmarket"
   },
   "amazon": {
     "status": "unk",
-    "last_checked": "2026-08-18T19:10:21.552185+00:00",
+    "last_checked": "2026-08-18T19:58:04.520447+00:00",
     "name": "Amazon.de"
   },
   "geizhals_booster_display": {
     "status": "error",
-    "last_checked": "2026-08-18T19:10:24.821324+00:00",
+    "last_checked": "2026-08-18T19:58:07.933156+00:00",
     "name": "Geizhals - Origins Booster Display (viele Haendler)"
   },
   "geizhals_spiritforged_display": {
     "status": "error",
-    "last_checked": "2026-08-18T19:10:27.980714+00:00",
+    "last_checked": "2026-08-18T19:58:11.215890+00:00",
     "name": "Geizhals - Spiritforged Booster Display (viele Haendler)"
   },
   "geizhals_leesin_deck": {
     "status": "error",
-    "last_checked": "2026-08-18T19:10:31.661050+00:00",
+    "last_checked": "2026-08-18T19:58:14.811193+00:00",
     "name": "Geizhals - Lee Sin Champion Deck Display"
   },
   "seen_announcements": [
