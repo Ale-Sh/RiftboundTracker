@@ -3,73 +3,73 @@
   "last_update_id": 599022883,
   "riot": {
     "status": "unk",
-    "last_checked": "2026-09-02T03:12:43.707513+00:00",
+    "last_checked": "2026-09-02T03:31:08.348964+00:00",
     "name": "Riot Games Store"
   },
   "amzicards": {
     "status": "unk",
-    "last_checked": "2026-09-02T03:12:47.324902+00:00",
+    "last_checked": "2026-09-02T03:31:11.671106+00:00",
     "name": "Amzicards.de"
   },
   "tcgtrade": {
     "status": "unk",
-    "last_checked": "2026-09-02T03:12:51.797106+00:00",
+    "last_checked": "2026-09-02T03:31:16.278314+00:00",
     "name": "TCG-Trade.de"
   },
   "tabletopdragon": {
     "status": "unk",
-    "last_checked": "2026-09-02T03:13:02.299486+00:00",
+    "last_checked": "2026-09-02T03:31:26.502298+00:00",
     "name": "Tabletop-dragon.de"
   },
   "spielraum": {
     "status": "error",
-    "last_checked": "2026-09-02T03:13:05.528933+00:00",
+    "last_checked": "2026-09-02T03:31:29.707277+00:00",
     "name": "SpielRaum (Wien)"
   },
   "tcgdealers": {
     "status": "unk",
-    "last_checked": "2026-09-02T03:13:09.159620+00:00",
+    "last_checked": "2026-09-02T03:31:33.415220+00:00",
     "name": "TCG Dealers"
   },
   "cardmarket": {
     "status": "error",
-    "last_checked": "2026-09-02T03:13:12.291699+00:00",
+    "last_checked": "2026-09-02T03:31:36.523743+00:00",
     "name": "Cardmarket"
   },
   "amazon": {
     "status": "unk",
-    "last_checked": "2026-09-02T03:13:15.608985+00:00",
+    "last_checked": "2026-09-02T03:31:40.339792+00:00",
     "name": "Amazon.de"
   },
   "geizhals_booster_display": {
     "status": "error",
-    "last_checked": "2026-09-02T03:13:19.286076+00:00",
+    "last_checked": "2026-09-02T03:31:44.253624+00:00",
     "name": "Geizhals - Origins Booster Display (viele Haendler)"
   },
   "geizhals_spiritforged_display": {
     "status": "error",
-    "last_checked": "2026-09-02T03:13:22.659906+00:00",
+    "last_checked": "2026-09-02T03:31:47.607460+00:00",
     "name": "Geizhals - Spiritforged Booster Display (viele Haendler)"
   },
   "geizhals_leesin_deck": {
     "status": "error",
-    "last_checked": "2026-09-02T03:13:26.203039+00:00",
+    "last_checked": "2026-09-02T03:31:51.155614+00:00",
     "name": "Geizhals - Lee Sin Champion Deck Display"
   },
   "seen_announcements": [
+    "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+    "https://playriftbound.com/en-us/news/announcements/august-2026-roadmap",
+    "https://playriftbound.com/en-us/news/announcements/a-note-on-vendetta-card-images",
+    "https://playriftbound.com/en-us/news/announcements/july-ban-list-updates",
     "https://playriftbound.com/en-us/news/announcements/august-2026-state-of-the-game",
     "https://playriftbound.com/en-us/news/announcements/vendetta-errata-updates",
-    "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+    "https://playriftbound.com/en-us/news/announcements/riftbound-vendetta-wild-rift-and-you",
     "https://playriftbound.com/en-us/news/announcements/riftbound-at-pax-west-2026",
-    "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
-    "https://playriftbound.com/en-us/news/announcements/august-2026-roadmap",
-    "https://playriftbound.com/en-us/news/announcements/riftbounds-creators-in-2027",
     "https://playriftbound.com/en-us/news/announcements/riftbound-at-gen-con-2026",
     "https://playriftbound.com/en-us/news/announcements/products-and-sets-into-2027",
-    "https://playriftbound.com/en-us/news/announcements/riftbound-vendetta-wild-rift-and-you",
     "https://playriftbound.com/en-us/news/announcements/august-merch-store-updates",
-    "https://playriftbound.com/en-us/news/announcements/core-rules-vendetta-patch-notes",
-    "https://playriftbound.com/en-us/news/announcements/a-note-on-vendetta-card-images",
-    "https://playriftbound.com/en-us/news/announcements/july-ban-list-updates"
+    "https://playriftbound.com/en-us/news/announcements/riftbounds-creators-in-2027",
+    "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
+    "https://playriftbound.com/en-us/news/announcements/core-rules-vendetta-patch-notes"
   ]
 }
