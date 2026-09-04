@@ -3,57 +3,57 @@
   "last_update_id": 599022883,
   "riot": {
     "status": "unk",
-    "last_checked": "2026-09-04T22:12:11.437990+00:00",
+    "last_checked": "2026-09-04T22:29:08.828335+00:00",
     "name": "Riot Games Store"
   },
   "amzicards": {
     "status": "unk",
-    "last_checked": "2026-09-04T22:12:14.846397+00:00",
+    "last_checked": "2026-09-04T22:29:12.197189+00:00",
     "name": "Amzicards.de"
   },
   "tcgtrade": {
     "status": "unk",
-    "last_checked": "2026-09-04T22:12:19.252927+00:00",
+    "last_checked": "2026-09-04T22:29:16.579513+00:00",
     "name": "TCG-Trade.de"
   },
   "tabletopdragon": {
     "status": "unk",
-    "last_checked": "2026-09-04T22:12:24.651843+00:00",
+    "last_checked": "2026-09-04T22:29:21.232871+00:00",
     "name": "Tabletop-dragon.de"
   },
   "spielraum": {
     "status": "error",
-    "last_checked": "2026-09-04T22:12:27.905920+00:00",
+    "last_checked": "2026-09-04T22:29:24.390903+00:00",
     "name": "SpielRaum (Wien)"
   },
   "tcgdealers": {
     "status": "unk",
-    "last_checked": "2026-09-04T22:12:31.404057+00:00",
+    "last_checked": "2026-09-04T22:29:27.806327+00:00",
     "name": "TCG Dealers"
   },
   "cardmarket": {
     "status": "error",
-    "last_checked": "2026-09-04T22:12:34.523460+00:00",
+    "last_checked": "2026-09-04T22:29:30.898413+00:00",
     "name": "Cardmarket"
   },
   "amazon": {
     "status": "unk",
-    "last_checked": "2026-09-04T22:12:37.775291+00:00",
+    "last_checked": "2026-09-04T22:29:34.281511+00:00",
     "name": "Amazon.de"
   },
   "geizhals_booster_display": {
     "status": "error",
-    "last_checked": "2026-09-04T22:12:41.429380+00:00",
+    "last_checked": "2026-09-04T22:29:37.711203+00:00",
     "name": "Geizhals - Origins Booster Display (viele Haendler)"
   },
   "geizhals_spiritforged_display": {
     "status": "error",
-    "last_checked": "2026-09-04T22:12:44.796441+00:00",
+    "last_checked": "2026-09-04T22:29:40.970492+00:00",
     "name": "Geizhals - Spiritforged Booster Display (viele Haendler)"
   },
   "geizhals_leesin_deck": {
     "status": "error",
-    "last_checked": "2026-09-04T22:12:48.325410+00:00",
+    "last_checked": "2026-09-04T22:29:44.400705+00:00",
     "name": "Geizhals - Lee Sin Champion Deck Display"
   },
   "seen_announcements": [
