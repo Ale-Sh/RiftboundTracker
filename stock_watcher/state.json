@@ -3,76 +3,76 @@
   "last_update_id": 599022883,
   "riot": {
     "status": "unk",
-    "last_checked": "2026-09-05T04:47:04.845898+00:00",
+    "last_checked": "2026-09-05T05:11:27.899909+00:00",
     "name": "Riot Games Store"
   },
   "amzicards": {
-    "status": "error",
-    "last_checked": "2026-09-05T04:47:48.053705+00:00",
+    "status": "unk",
+    "last_checked": "2026-09-05T05:11:31.350871+00:00",
     "name": "Amzicards.de"
   },
   "tcgtrade": {
     "status": "unk",
-    "last_checked": "2026-09-05T04:47:52.624679+00:00",
+    "last_checked": "2026-09-05T05:11:35.884348+00:00",
     "name": "TCG-Trade.de"
   },
   "tabletopdragon": {
     "status": "unk",
-    "last_checked": "2026-09-05T04:47:56.634292+00:00",
+    "last_checked": "2026-09-05T05:11:41.285786+00:00",
     "name": "Tabletop-dragon.de"
   },
   "spielraum": {
     "status": "error",
-    "last_checked": "2026-09-05T04:48:00.042587+00:00",
+    "last_checked": "2026-09-05T05:11:44.550061+00:00",
     "name": "SpielRaum (Wien)"
   },
   "tcgdealers": {
     "status": "unk",
-    "last_checked": "2026-09-05T04:48:03.721460+00:00",
+    "last_checked": "2026-09-05T05:11:48.988387+00:00",
     "name": "TCG Dealers"
   },
   "cardmarket": {
     "status": "error",
-    "last_checked": "2026-09-05T04:48:06.845820+00:00",
+    "last_checked": "2026-09-05T05:11:52.116288+00:00",
     "name": "Cardmarket"
   },
   "amazon": {
     "status": "unk",
-    "last_checked": "2026-09-05T04:48:10.076794+00:00",
+    "last_checked": "2026-09-05T05:11:55.967919+00:00",
     "name": "Amazon.de"
   },
   "geizhals_booster_display": {
     "status": "error",
-    "last_checked": "2026-09-05T04:48:13.716832+00:00",
+    "last_checked": "2026-09-05T05:11:59.398678+00:00",
     "name": "Geizhals - Origins Booster Display (viele Haendler)"
   },
   "geizhals_spiritforged_display": {
     "status": "error",
-    "last_checked": "2026-09-05T04:48:16.981074+00:00",
+    "last_checked": "2026-09-05T05:12:02.670397+00:00",
     "name": "Geizhals - Spiritforged Booster Display (viele Haendler)"
   },
   "geizhals_leesin_deck": {
     "status": "error",
-    "last_checked": "2026-09-05T04:48:20.404844+00:00",
+    "last_checked": "2026-09-05T05:12:06.244647+00:00",
     "name": "Geizhals - Lee Sin Champion Deck Display"
   },
   "seen_announcements": [
-    "https://playriftbound.com/en-us/news/announcements/core-rules-vendetta-patch-notes",
-    "https://playriftbound.com/en-us/news/announcements/a-note-on-vendetta-card-images",
-    "https://playriftbound.com/en-us/news/announcements/august-2026-state-of-the-game",
-    "https://playriftbound.com/en-us/news/announcements/koreas-rift-opens-on-september-18",
-    "https://playriftbound.com/en-us/news/announcements/august-2026-roadmap",
-    "https://playriftbound.com/en-us/news/announcements/riftbound-vendetta-wild-rift-and-you",
-    "https://playriftbound.com/en-us/news/announcements/riftbound-at-pax-west-2026",
-    "https://playriftbound.com/en-us/news/announcements/vendetta-errata-updates",
-    "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
     "https://playriftbound.com/en-us/news/announcements/riftbound-at-gen-con-2026",
-    "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+    "https://playriftbound.com/en-us/news/announcements/koreas-rift-opens-on-september-18",
     "https://playriftbound.com/en-us/news/announcements/july-ban-list-updates",
     "https://playriftbound.com/en-us/news/announcements/riftbounds-creators-in-2027",
-    "https://playriftbound.com/en-us/news/announcements/products-and-sets-into-2027",
-    "https://playriftbound.com/en-us/news/announcements/introducing-the-new-playriftboundcom",
+    "https://playriftbound.com/en-us/news/announcements/a-note-on-vendetta-card-images",
+    "https://playriftbound.com/en-us/news/announcements/riftbound-vendetta-wild-rift-and-you",
     "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
-    "https://playriftbound.com/en-us/news/announcements/august-merch-store-updates"
+    "https://playriftbound.com/en-us/news/announcements/introducing-the-new-playriftboundcom",
+    "https://playriftbound.com/en-us/news/announcements/core-rules-vendetta-patch-notes",
+    "https://playriftbound.com/en-us/news/announcements/vendetta-errata-updates",
+    "https://playriftbound.com/en-us/news/announcements/august-merch-store-updates",
+    "https://playriftbound.com/en-us/news/announcements/august-2026-roadmap",
+    "https://playriftbound.com/en-us/news/announcements/august-2026-state-of-the-game",
+    "https://playriftbound.com/en-us/news/announcements/products-and-sets-into-2027",
+    "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+    "https://playriftbound.com/en-us/news/announcements/riftbound-at-pax-west-2026",
+    "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/"
   ]
 }
